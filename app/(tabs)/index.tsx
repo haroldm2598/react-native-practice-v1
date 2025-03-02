@@ -5,9 +5,26 @@ import { ThemedText } from '../../components/ThemedText';
 export default function HomeScreen() {
 	return (
 		<ScrollView>
-			<ThemedView className='p-4'>
-				<Text className='text-xl font-bold'>Sell Online Courses & More</Text>
-				<Text className='mt-2'>
+			<ThemedView
+				style={{
+					paddingTop: 20,
+					paddingLeft: 6,
+					paddingRight: 6
+				}}
+			>
+				<Text
+					style={{
+						fontSize: 24,
+						fontWeight: 700
+					}}
+				>
+					Sell Online Courses & More
+				</Text>
+				<Text
+					style={{
+						marginTop: 5
+					}}
+				>
 					Create, manage, and sell your digital products easily.
 				</Text>
 				<Image
@@ -17,8 +34,20 @@ export default function HomeScreen() {
 				<Button title='Get Started' onPress={() => console.log('Sign Up')} />
 			</ThemedView>
 
-			<ThemedView className='p-4 mt-4 bg-gray-100'>
-				<Text className='text-lg font-semibold'>Why Choose Us?</Text>
+			<ThemedView
+				style={{
+					marginTop: 5,
+					padding: 6
+				}}
+			>
+				<Text
+					style={{
+						fontSize: 18,
+						fontWeight: 600
+					}}
+				>
+					Why Choose Us?
+				</Text>
 				<Text>
 					We handle payments, hosting, and everything else so you can focus on
 					content.
@@ -34,8 +63,20 @@ export default function HomeScreen() {
 				/>
 			</ThemedView>
 
-			<ThemedView className='p-4 mt-4'>
-				<Text className='text-lg font-semibold'>Features</Text>
+			<ThemedView
+				style={{
+					marginTop: 5,
+					padding: 6
+				}}
+			>
+				<Text
+					style={{
+						fontSize: 18,
+						fontWeight: 600
+					}}
+				>
+					Features
+				</Text>
 				<Text>- Sell courses, webinars, and digital products</Text>
 				<Text>- Built-in payment processing</Text>
 				<Text>- Simple and intuitive interface</Text>
